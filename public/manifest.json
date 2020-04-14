@@ -1,0 +1,9 @@
+{
+    "short_name": "patches.ts",
+    "name": "patches.ts",
+    "icons": [],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}
