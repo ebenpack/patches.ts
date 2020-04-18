@@ -33,6 +33,7 @@ export const Node = ({
     const bodyText = node.body;
     // const Widgets = node.get('widgets');
     // const state = node.get('state');
+    const baseline = "hanging";
     return (
         <g
             transform={transform}
@@ -59,18 +60,25 @@ export const Node = ({
                 x={width - 2}
                 y="2"
                 className="close"
-                alignmentBaseline="hanging"
+                alignmentBaseline={baseline}
+                dominantBaseline={baseline}
                 textAnchor="end"
                 onMouseUp={() => removeNode(node)}
             >
                 ✕
             </text>
-            <text className="title" x="4" y="4" alignmentBaseline="hanging">
+            <text
+                className="title"
+                x="4"
+                alignmentBaseline={baseline}
+                dominantBaseline={baseline}
+            >
                 {title}
             </text>
             <text
                 className="body"
-                alignmentBaseline="hanging"
+                alignmentBaseline={baseline}
+                dominantBaseline={baseline}
                 y={height * 0.2 + 4}
                 x="4"
             >
